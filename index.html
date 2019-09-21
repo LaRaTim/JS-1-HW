@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+// 1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100
+    
+    let n=100
+    let i=0
+    let log1=true
+//    let log2=true
+    
+    function test1 (a, lim){
+        return (a<=lim)&((a/a++)=1) ? true : false
+    }
+        
+//    function test2 (b){
+//        return b/b++=1 ? true : false
+//    }
+        //
+        
+    while (log1){
+        console.log (i)
+        log1 = test1 (i, n)
+//        log2 = test2 (i)
+        i++
+    }
+
+        
+
+        
+    </script>
+    <script>
+    //4.*Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. Выглядеть это должно так:
+//for(…){// здесь пусто}
+        
+        for (let i=0; i<=9; console.log (i++)){
+            //здесь пусто
+        }
+        
+    </script>
+    
+    <script>
+    //4) *Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:
+//x
+//xx
+//xxx
+//xxxx
+//xxxxx
+        var el=`X`
+        for (var i=0; i<=20; i++){
+            console.log (el)
+            el +=`X`
+        }
+    </script>
+</body>
+</html>
